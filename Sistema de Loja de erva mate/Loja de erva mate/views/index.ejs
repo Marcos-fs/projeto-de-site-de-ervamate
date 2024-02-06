@@ -1,0 +1,21 @@
+<%- include('../views/partials/head') %>
+<h1>
+   Bem vindo a Loja perfeita para o seu chimarrão
+</h1>
+<div class="container">
+
+    <% for (loja of lojas) { %>
+        <div class="item">
+            <a href="/lojas/<%= loja._id %>">
+                <h2><%= loja.nome %></h2>
+                <img class="lojaimg" src="<%= loja.imagem %>" alt="<%= loja.nome %>"> 
+                <p>Preço: R$ <%= loja.preco %></p>
+            </a>
+        </div>
+    <% } %>
+    <% if (adminRestriction) { %>
+        <a href="/lojas/new">Adicionar Produto</a>
+        <% } %>
+
+</div>
+<%- include('../views/partials/footer') %>

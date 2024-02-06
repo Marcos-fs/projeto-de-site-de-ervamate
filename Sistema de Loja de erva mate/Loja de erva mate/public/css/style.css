@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.log {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+input[type="text"],
+input[type="password"],
+.log button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.log button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+.log h1, h2 {
+    margin-bottom: 5px;
+}
+
+.log p {
+    margin-top: 5px;
+}
+
+.log a {
+    text-decoration: none;
+    color: #333;
+}
+
+.log a:hover {
+    text-decoration: underline;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #383333;
+    color: white;
+    border: 2px solid #fff; 
+    border-radius: 10px; 
+    width: 60%; 
+    padding: 20px;
+    margin: 0 auto;
+}
+.botoes:hover {
+    background-color: #777;
+    color: white;
+    transform: scale(1.05); 
+}
+
+.botoes {
+    margin-top: 20px;
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container .item {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    text-align: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    text-align: center;
+}
+
+.lojaimg {
+    width: 150px;
+    height: auto; 
+    display: block; 
+    margin: 0 auto 10px;
+    border: 2px solid #ccc; 
+    border-radius: 8px;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; 
+}body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+
+.carrinho {
+    display: flex;
+    float: right;
+    position: relative;
+}
+
+.carrinho img {
+    width: 60px;
+    margin-right: 5px; 
+}
