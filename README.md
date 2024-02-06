@@ -1,4 +1,4 @@
-Sistema de Vendas Online com Autenticação de Clientes e Administração
+**Sistema de Vendas Online com Autenticação de Clientes e Administração**
 
 Este é um projeto que visa desenvolver um sistema de vendas online completo, utilizando tecnologias web como HTML, CSS, JavaScript e Node.js. O sistema inclui um banco de dados para armazenar informações de produtos, clientes, vendas e administração.
 
