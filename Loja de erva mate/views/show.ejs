@@ -1,0 +1,28 @@
+<%- include('../views/partials/head') %>
+
+<h1>Detalhes do Produto</h1>
+<div class="show">
+<p>Nome: <%= loja.nome %>.</p>
+<img class="lojaimg" src="<%= loja.imagem %>" alt="<%= loja.nome %>"> 
+<p>Preço: R$ <%= loja.preco %>.</p>
+
+
+<% if (adminRestriction) { %>
+    <div class="adm">
+    <h3>Bem vindo adm</h3>
+    <form action="/lojas/<%= loja._id %>/edit" method="GET">
+        <button class="botoes" type="submit" >Editar o Produto</button>
+    </form>
+    <form id="f" action="/lojas/<%= loja._id %>?_method=DELETE" method="POST">
+        <button class="botoes" type="button" onClick="confirm('Tem certeza que deseja apagar o produto <%= loja.nome %>?') ? document.getElementById('f').submit() : false">Remover</button>
+    </form>
+<% }else{ %>
+        <form action="/carrinho/<%= loja._id %>" method="get">
+            <input type="number" name="quantidade" id="quantidade"  min='1' max='10' required>
+            <input type="hidden" name="livroId" value="<%= loja._id %>">
+            <button type="submit" class="botoes">Adicionar ao Carrinho</button>
+        </form>
+    </div>
+
+<% } %>
+<a href="/lojas"><button class="botoes">Voltar</button></a>   
