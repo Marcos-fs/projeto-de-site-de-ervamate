@@ -14,3 +14,6 @@ Tecnologias Utilizadas:
 Front-end: HTML, CSS, JavaScript.
 Back-end: Node.js, Express.js.
 Banco de Dados: Relacional ou não-relacional, para armazenamento de informações.
+
+
+![image](https://github.com/Marcos-fs/projeto-de-site-de-ervamate/assets/159043587/96825b01-b84f-4859-bf2f-2734cce1c82a)
